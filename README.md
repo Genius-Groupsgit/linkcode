@@ -21,3 +21,6 @@ npm test           # test de bout en bout, sans dépendance
 | Script de démarrage absent | Renommer `start` en `serve` dans `package.json` | Explique la cause ; la correction du `package.json` demande votre approbation (branche dédiée). |
 
 Faire la panne sur une **branche** (`demo-panne`) et déployer cette branche : `main` reste sain pour le déploiement normal.
+
+## Cette branche (`demo-panne`)
+Panne volontaire : le port est écrit en dur à `8080` dans `server.js` (au lieu de `PORT`, 3000 par défaut). Le conteneur démarre mais la plateforme n'y accède pas sur le port 3000 : c'est le scénario « mauvais port » ci-dessus. `main` reste sain.

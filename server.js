@@ -5,7 +5,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
 
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = 8080;
 const DATA_FILE = process.env.DATA_FILE || path.join(__dirname, "data", "links.json");
 const PUBLIC_DIR = path.join(__dirname, "public");
 const MAX_LINKS = 1000;
