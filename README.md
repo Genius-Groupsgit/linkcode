@@ -9,7 +9,7 @@ npm test           # test de bout en bout, sans dépendance
 ```
 
 ## Déploiement (rapide)
-- Un `Dockerfile` de 8 lignes (image `node:22-alpine`, aucune dépendance à installer) : le build prend quelques secondes, il n'y a rien à télécharger ni à compiler. Port **3000**.
+- Un petit `Dockerfile` (image `node:22-alpine` + `curl` pour la sonde de santé, aucune dépendance npm à installer) : le build prend quelques secondes, il n'y a rien à télécharger ni à compiler. Port **3000**.
 - Sonde de santé : `GET /` (la landing) et `GET /healthz`.
 - Les liens sont gardés dans `data/links.json`, ou en mémoire si le disque est en lecture seule.
 
