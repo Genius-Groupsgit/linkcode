@@ -3,3 +3,6 @@ data
 .git
 .env
 *.md
+Dockerfile
+.dockerignore
+server.test.js
